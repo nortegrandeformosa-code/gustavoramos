@@ -208,3 +208,22 @@ body {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(163, 230, 53, 0.2), rgba(194, 65, 12, 0.2), transparent);
 }
+
+/* ─────── Brand mark ─────── */
+.brand {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.brand:hover {
+  transform: translateY(-1px);
+}
+.brand:hover > span:first-child {
+  background: linear-gradient(135deg, #a3e635, #ea580c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.brand:hover > span:last-child {
+  color: #ea580c;
+  text-shadow: 0 0 12px rgba(234, 88, 12, 0.6);
+}

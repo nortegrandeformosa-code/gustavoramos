@@ -85,10 +85,9 @@ function Navigation() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'py-3 bg-black/80 backdrop-blur-xl border-b border-white/5' : 'py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#a3e635] to-[#c2410c] flex items-center justify-center">
-            <span className="text-black font-black text-sm">GR</span>
-          </div>
+        <a href="#inicio" className="brand flex items-baseline gap-0 select-none" aria-label="Gustavo Ramos, inicio">
+          <span className="text-2xl font-black tracking-tight text-white">gr</span>
+          <span className="text-[10px] font-bold text-[#a3e635] ml-0.5 align-top">©</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -644,12 +643,11 @@ function Footer() {
   return (
     <footer className="relative py-10 px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-7 h-7 rounded-md bg-gradient-to-br from-[#a3e635] to-[#c2410c] flex items-center justify-center">
-            <span className="text-black font-black text-[10px]">GR</span>
-          </div>
-          <span className="text-white/30 text-sm">© 2026 Gustavo Ramos</span>
-        </div>
+        <a href="#inicio" className="brand flex items-baseline gap-0 select-none" aria-label="Gustavo Ramos, inicio">
+          <span className="text-xl font-black tracking-tight text-white">gr</span>
+          <span className="text-[9px] font-bold text-[#a3e635] ml-0.5 align-top">©</span>
+        </a>
+        <span className="text-white/30 text-sm">© 2026 Gustavo Ramos</span>
         <div className="flex items-center gap-2 text-white/20 text-xs">
           <span className="w-1.5 h-1.5 bg-[#a3e635] rounded-full animate-glow-pulse" />
           <span>Formosa, Argentina</span>
